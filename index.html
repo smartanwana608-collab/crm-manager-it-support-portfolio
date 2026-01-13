@@ -9,83 +9,105 @@
 
 <body>
 
-<!-- NAVIGATION -->
+<!-- =========================
+     NAVIGATION
+========================= -->
 <header class="site-header">
- <nav class="nav">
-  <div class="nav-container">
-    <div class="logo">Smart Anwana</div>
+  <nav class="nav">
+    <div class="nav-container">
+      <div class="logo">Smart Anwana</div>
 
-    <!-- Desktop Links -->
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="case-studies.html">Case Studies</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="cv.html">CV</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+      <!-- Desktop Navigation -->
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
 
-    <!-- Mobile Menu Button -->
-    <button class="menu-toggle" aria-label="Open menu">
-      ☰
-    </button>
-  </div>
+      <!-- Mobile Menu Toggle -->
+      <button class="menu-toggle" aria-label="Open menu">
+        ☰
+      </button>
+    </div>
 
-  <!-- Mobile Slide Menu -->
-  <div class="mobile-menu">
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="case-studies.html">Case Studies</a>
-    <a href="about.html">About</a>
-    <a href="cv.html">CV</a>
-    <a href="contact.html">Contact</a>
-  </div>
-</nav>
+    <!-- Mobile Slide Menu -->
+    <div class="mobile-menu">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="case-studies.html">Case Studies</a>
+      <a href="about.html">About</a>
+      <a href="cv.html">CV</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
 </header>
 
-<!-- HERO SECTION -->
-<section class="hero">
-  <div class="hero-container">
+<!-- =========================
+     HERO SECTION
+========================= -->
+<main>
+  <section class="hero">
+    <div class="hero-container">
 
-    <!-- TEXT -->
-    <div class="hero-text">
-      <h1>
-        CRM Manager &<br>
-        IT Support Specialist
-      </h1>
+      <!-- Hero Text -->
+      <div class="hero-text">
+        <h1>
+          CRM Manager &<br>
+          IT Support Specialist
+        </h1>
 
-      <p class="hero-subtitle">
-        I design, fix, and optimize CRM systems that are simple to use,
-        reliable, and actually used daily by teams.
-      </p>
+        <p class="hero-subtitle">
+          I design, fix, and optimize CRM systems that are simple to use,
+          reliable, and actually used daily by teams.
+        </p>
 
-      <div class="hero-actions">
-        <a href="case-studies.html" class="btn btn-primary">
-          View Case Studies
-        </a>
-        <a href="contact.html" class="btn btn-secondary">
-          Get in Touch
-        </a>
+        <div class="hero-actions">
+          <a href="case-studies.html" class="btn btn-primary">
+            View Case Studies
+          </a>
+          <a href="contact.html" class="btn btn-secondary">
+            Get in Touch
+          </a>
+        </div>
       </div>
-    </div>
 
-    <!-- GRAPHIC CARD -->
-    <div class="hero-visual">
-      <div class="graphic-card">
-        <div class="graphic-line"></div>
-        <div class="graphic-box"></div>
-        <div class="graphic-box small"></div>
-        <div class="graphic-dot"></div>
+      <!-- Hero Visual (Graphic Card) -->
+      <div class="hero-visual">
+        <div class="graphic-card">
+          <div class="graphic-line"></div>
+          <div class="graphic-box"></div>
+          <div class="graphic-box small"></div>
+          <div class="graphic-dot"></div>
+        </div>
       </div>
+
     </div>
+  </section>
+</main>
 
-  </div>
-</section>
-
-<!-- FOOTER -->
+<!-- =========================
+     FOOTER
+========================= -->
 <footer class="site-footer">
   © Smart Anwana — CRM & IT Support Portfolio
 </footer>
+
+<!-- =========================
+     MOBILE MENU SCRIPT
+========================= -->
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const menu = document.querySelector('.mobile-menu');
+
+  if (toggle && menu) {
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('open');
+    });
+  }
+</script>
 
 </body>
 </html>
