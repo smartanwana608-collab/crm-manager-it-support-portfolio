@@ -9,12 +9,13 @@
 
 <body>
 
-<!-- NAV (same as homepage) -->
+<!-- NAVIGATION -->
 <header class="site-header">
   <nav class="nav">
     <div class="nav-container">
       <div class="logo">Smart Anwana</div>
 
+      <!-- Desktop Links -->
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html" class="active">Services</a></li>
@@ -24,9 +25,13 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
 
-      <button class="menu-toggle">☰</button>
+      <!-- Mobile Menu Button -->
+      <button class="menu-toggle" aria-label="Open menu">
+        ☰
+      </button>
     </div>
 
+    <!-- Mobile Slide Menu -->
     <div class="mobile-menu">
       <a href="index.html">Home</a>
       <a href="services.html">Services</a>
@@ -47,9 +52,8 @@
   </p>
 </section>
 
-<!-- SERVICES GRID -->
+<!-- CRM SERVICES -->
 <section class="services-section">
-
   <h2>CRM Setup & Automation</h2>
 
   <div class="services-grid">
@@ -91,12 +95,10 @@
     </div>
 
   </div>
-
 </section>
 
 <!-- IT SUPPORT -->
 <section class="services-section">
-
   <h2>IT Support & Integrations</h2>
 
   <div class="services-grid">
@@ -124,12 +126,21 @@
     </div>
 
   </div>
-
 </section>
 
 <footer class="site-footer">
   © Smart Anwana — CRM & IT Support Portfolio
 </footer>
+
+<!-- MOBILE MENU SCRIPT -->
+<script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const mobileMenu = document.querySelector('.mobile-menu');
+
+  menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('open');
+  });
+</script>
 
 </body>
 </html>
