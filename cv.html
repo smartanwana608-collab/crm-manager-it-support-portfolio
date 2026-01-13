@@ -15,6 +15,7 @@
     <div class="nav-container">
       <div class="logo">Smart Anwana</div>
 
+      <!-- Desktop Links -->
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
@@ -24,9 +25,11 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
 
-      <button class="menu-toggle">☰</button>
+      <!-- Mobile Button -->
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
     </div>
 
+    <!-- Mobile Menu -->
     <div class="mobile-menu">
       <a href="index.html">Home</a>
       <a href="services.html">Services</a>
@@ -41,14 +44,11 @@
 <!-- PAGE HERO -->
 <section class="page-hero">
   <h1>Uduakobong Anwana <span>(Smart)</span></h1>
-
-  <p class="cv-role">
-    CRM Manager & IT Support Specialist
-  </p>
+  <p class="cv-role">CRM Manager & IT Support Specialist</p>
 
   <div class="cv-actions">
     <a
-      href="https://raw.githubusercontent.com/smartanwana608-collab/crm-manager-it-support-portfolio/fed8396d1d4918fc5f6d75e29717043616afbe00/Uduakobong-Anwana-CV%20.pdf"
+      href="https://raw.githubusercontent.com/smartanwana608-collab/crm-manager-it-support-portfolio/main/Uduakobong-Anwana-CV.pdf"
       class="btn btn-primary"
       target="_blank"
       rel="noopener"
@@ -64,9 +64,9 @@
   <section class="cv-section">
     <h2>Professional Summary</h2>
     <p class="about-text">
-      CRM Manager and IT Support Specialist with hands-on experience
-      designing, implementing, and maintaining CRM systems for real estate
-      professionals, small businesses, startups, and consultants.
+      CRM Manager and IT Support Specialist with hands-on experience designing,
+      implementing, and maintaining CRM systems for real estate professionals,
+      small businesses, startups, and consultants.
       Focused on automation, usability, and long-term system reliability.
     </p>
   </section>
@@ -122,6 +122,16 @@
 <footer class="site-footer">
   © Uduakobong Anwana (Smart) — CRM & IT Support Portfolio
 </footer>
+
+<!-- MOBILE MENU SCRIPT -->
+<script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const mobileMenu = document.querySelector('.mobile-menu');
+
+  menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('open');
+  });
+</script>
 
 </body>
 </html>
