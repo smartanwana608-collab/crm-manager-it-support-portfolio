@@ -475,11 +475,11 @@ body {
   }
 }
 /* =========================
-   ABOUT PAGE
+   ABOUT PAGE (FIXED SPACING)
 ========================= */
 
 .about-hero {
-  padding: 100px 20px;
+  padding: 72px 20px 56px; /* reduced vertical space */
 }
 
 .about-hero-container {
@@ -487,7 +487,7 @@ body {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 320px 1fr;
-  gap: 60px;
+  gap: 48px; /* tighter gap */
   align-items: center;
 }
 
@@ -497,28 +497,33 @@ body {
   border: 1px solid rgba(255,255,255,0.12);
 }
 
+/* Intro text */
+
 .about-intro h1 {
   font-size: 36px;
-  margin-bottom: 16px;
+  margin-bottom: 12px; /* reduced */
 }
 
 .about-intro .lead {
   font-size: 18px;
   color: #cbd5e1;
-  margin-bottom: 16px;
+  margin-bottom: 12px; /* reduced */
 }
 
 .about-intro p {
   color: #94a3b8;
   max-width: 640px;
+  margin-bottom: 0;
 }
 
-/* Sections */
+/* =========================
+   SECTIONS
+========================= */
 
 .about-section {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 80px 20px;
+  padding: 56px 20px; /* reduced from 80px */
 }
 
 .about-section.muted {
@@ -526,28 +531,30 @@ body {
 }
 
 .about-section h2 {
-  font-size: 28px;
-  margin-bottom: 32px;
+  font-size: 26px;
+  margin-bottom: 24px; /* reduced */
 }
 
-/* Grid */
+/* =========================
+   GRID
+========================= */
 
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 32px;
+  gap: 28px; /* slightly tighter */
 }
 
 .about-card {
   background: rgba(255,255,255,0.04);
   border: 1px solid rgba(255,255,255,0.08);
   border-radius: 16px;
-  padding: 28px;
+  padding: 24px; /* reduced */
 }
 
 .about-card h3 {
   font-size: 20px;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 
 .about-card h3 span {
@@ -560,31 +567,35 @@ body {
 }
 
 .about-card li {
-  margin-bottom: 8px;
+  margin-bottom: 6px; /* tighter list */
   font-size: 15px;
 }
 
-/* Tags */
+/* =========================
+   TAGS
+========================= */
 
 .tag-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 10px;
 }
 
 .tag-list span {
-  padding: 8px 14px;
+  padding: 7px 13px;
   border-radius: 999px;
   background: rgba(255,255,255,0.06);
   font-size: 14px;
 }
 
-/* Text */
+/* =========================
+   TEXT BLOCKS
+========================= */
 
 .about-text {
   max-width: 720px;
   color: #cbd5e1;
-  margin-bottom: 16px;
+  margin-bottom: 12px; /* reduced */
 }
 
 .about-points {
@@ -592,20 +603,31 @@ body {
 }
 
 .about-points li {
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
-/* Mobile */
+/* =========================
+   MOBILE
+========================= */
 
 @media (max-width: 768px) {
+  .about-hero {
+    padding: 56px 16px 40px;
+  }
+
   .about-hero-container {
     grid-template-columns: 1fr;
     text-align: center;
+    gap: 32px;
   }
 
   .about-image {
     max-width: 220px;
     margin: 0 auto;
+  }
+
+  .about-section {
+    padding: 40px 16px;
   }
 
   .about-grid {
