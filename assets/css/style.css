@@ -777,3 +777,85 @@ body {
     grid-template-columns: 1fr;
   }
 }
+/* =========================
+   CV PAGE
+========================= */
+
+.cv-role {
+  font-size: 18px;
+  color: #cbd5e1;
+  margin-bottom: 16px;
+}
+
+.cv-actions {
+  margin-top: 16px;
+}
+
+.cv-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+
+.cv-section {
+  padding: 50px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.cv-section.muted {
+  background: rgba(255,255,255,0.02);
+  border-radius: 18px;
+}
+
+.cv-section h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+/* Lists */
+
+.cv-list {
+  padding-left: 18px;
+}
+
+.cv-list li {
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: #cbd5e1;
+}
+
+/* Tags */
+
+.cv-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+}
+
+.cv-tags li {
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.06);
+  font-size: 14px;
+  color: #e5e7eb;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .cv-role {
+    font-size: 16px;
+  }
+
+  .cv-section {
+    padding: 36px 16px;
+  }
+
+  .cv-actions {
+    display: flex;
+    justify-content: center;
+  }
+}
