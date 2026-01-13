@@ -15,6 +15,7 @@
     <div class="nav-container">
       <div class="logo">Smart Anwana</div>
 
+      <!-- Desktop Links -->
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
@@ -24,9 +25,11 @@
         <li><a href="contact.html" class="active">Contact</a></li>
       </ul>
 
-      <button class="menu-toggle">☰</button>
+      <!-- Mobile Button -->
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
     </div>
 
+    <!-- Mobile Menu -->
     <div class="mobile-menu">
       <a href="index.html">Home</a>
       <a href="services.html">Services</a>
@@ -52,7 +55,6 @@
 
   <section class="contact-card">
     <h2>What You Can Contact Me For</h2>
-
     <ul class="contact-list">
       <li>CRM setup, cleanup, and optimization</li>
       <li>Lead pipelines and automation workflows</li>
@@ -65,7 +67,6 @@
 
   <section class="contact-card highlight">
     <h2>Get in Touch</h2>
-
     <p class="contact-email">
       Email me directly and include a short description of what you’re trying to achieve.
     </p>
@@ -87,6 +88,16 @@
 <footer class="site-footer">
   © Uduakobong Anwana (Smart) — CRM & IT Support Portfolio
 </footer>
+
+<!-- MOBILE MENU SCRIPT -->
+<script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const mobileMenu = document.querySelector('.mobile-menu');
+
+  menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('open');
+  });
+</script>
 
 </body>
 </html>
