@@ -3,82 +3,140 @@
 <head>
   <meta charset="UTF-8">
   <title>Case Studies | Smart Anwana</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
 
 <body>
 
-<header>
+<!-- NAVIGATION -->
+<header class="site-header">
   <nav class="nav">
     <div class="nav-container">
       <div class="logo">Smart Anwana</div>
+
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
-        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="case-studies.html" class="active">Case Studies</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="cv.html">CV</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
+
+      <button class="menu-toggle" aria-label="Open menu">☰</button>
+    </div>
+
+    <div class="mobile-menu">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="case-studies.html">Case Studies</a>
+      <a href="about.html">About</a>
+      <a href="cv.html">CV</a>
+      <a href="contact.html">Contact</a>
     </div>
   </nav>
 </header>
 
-<div class="page">
-
-  <section class="section">
+<!-- PAGE HERO -->
+<section class="page-hero">
   <h1>Case Studies</h1>
-  <p class="section-intro">
+  <p>
     Real-world CRM and IT support projects focused on usability,
     automation, and long-term system reliability.
   </p>
-
-  <div class="case-grid">
-
-    <div class="case-card">
-      <h3>Lofty CRM Setup — Real Estate</h3>
-      <p class="case-meta">CRM Manager • Real Client</p>
-      <ul>
-        <li><strong>Problem:</strong> No automation, poor lead tracking.</li>
-        <li><strong>Solution:</strong> Pipelines, automations, IDX setup.</li>
-        <li><strong>Result:</strong> Faster response and daily CRM usage.</li>
-      </ul>
-      <div class="case-placeholder">Screenshot placeholder</div>
-    </div>
-
-    <div class="case-card">
-      <h3>GoHighLevel Automation</h3>
-      <p class="case-meta">CRM Manager • Real Client</p>
-      <ul>
-        <li><strong>Problem:</strong> Missed leads and manual follow-up.</li>
-        <li><strong>Solution:</strong> Workflows, SMS/email, Zapier.</li>
-        <li><strong>Result:</strong> Automated lead handling.</li>
-      </ul>
-      <div class="case-placeholder">Screenshot placeholder</div>
-    </div>
-
-    <div class="case-card">
-      <h3>IT Support & Systems</h3>
-      <p class="case-meta">IT Support Specialist</p>
-      <ul>
-        <li><strong>Problem:</strong> System and email failures.</li>
-        <li><strong>Solution:</strong> DNS, email auth, integrations.</li>
-        <li><strong>Result:</strong> Stable and reliable systems.</li>
-      </ul>
-      <div class="case-placeholder">Screenshot placeholder</div>
-    </div>
-
-  </div>
 </section>
 
-</div>
+<!-- CASE STUDIES -->
+<section class="case-studies">
 
+  <!-- CASE 1 -->
+  <div class="case-row">
+    <div class="case-text">
+      <span class="case-tag">Real Estate CRM</span>
+      <h2>Lofty CRM Setup</h2>
+      <p>
+        Full CRM setup for a real estate agent with no automation,
+        unclear pipelines, and poor lead follow-up.
+      </p>
 
+      <ul>
+        <li><strong>Problem:</strong> No automation, missed leads</li>
+        <li><strong>Solution:</strong> Buyer/seller pipelines, IDX, workflows</li>
+        <li><strong>Result:</strong> Faster response & daily CRM usage</li>
+      </ul>
+    </div>
 
-<footer>
+    <div class="case-visual">
+      <div class="case-image-placeholder">
+        Screenshot Placeholder
+      </div>
+    </div>
+  </div>
+
+  <!-- CASE 2 -->
+  <div class="case-row reverse">
+    <div class="case-text">
+      <span class="case-tag blue">Automation</span>
+      <h2>GoHighLevel Automation</h2>
+      <p>
+        Stabilized and automated a GoHighLevel setup that was missing
+        workflows, email deliverability, and lead routing.
+      </p>
+
+      <ul>
+        <li><strong>Problem:</strong> Manual follow-ups, poor delivery</li>
+        <li><strong>Solution:</strong> Workflows, SMS/email, Zapier</li>
+        <li><strong>Result:</strong> Fully automated lead handling</li>
+      </ul>
+    </div>
+
+    <div class="case-visual">
+      <div class="case-image-placeholder">
+        Screenshot Placeholder
+      </div>
+    </div>
+  </div>
+
+  <!-- CASE 3 -->
+  <div class="case-row">
+    <div class="case-text">
+      <span class="case-tag green">IT Support</span>
+      <h2>IT Support & Systems</h2>
+      <p>
+        Ongoing IT support across CRMs, domains, email systems,
+        and third-party integrations.
+      </p>
+
+      <ul>
+        <li><strong>Problem:</strong> Email failures, broken integrations</li>
+        <li><strong>Solution:</strong> DNS, SPF/DKIM, Zapier fixes</li>
+        <li><strong>Result:</strong> Stable, reliable systems</li>
+      </ul>
+    </div>
+
+    <div class="case-visual">
+      <div class="case-image-placeholder">
+        Screenshot Placeholder
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<footer class="site-footer">
   © Smart Anwana — CRM & IT Support Portfolio
 </footer>
+
+<!-- MOBILE MENU SCRIPT -->
+<script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const mobileMenu = document.querySelector('.mobile-menu');
+
+  menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('open');
+  });
+</script>
 
 </body>
 </html>
