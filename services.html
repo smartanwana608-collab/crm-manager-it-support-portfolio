@@ -3,14 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <title>Services | Smart Anwana</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
-<header>
+<!-- NAVIGATION -->
+<header class="site-header">
   <nav class="nav">
     <div class="nav-container">
       <div class="logo">Smart Anwana</div>
+
+      <!-- Desktop Links -->
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
@@ -19,119 +24,111 @@
         <li><a href="cv.html">CV</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
+
+      <!-- Mobile Menu Button -->
+      <button class="menu-toggle" aria-label="Open menu">☰</button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="case-studies.html">Case Studies</a>
+      <a href="about.html">About</a>
+      <a href="cv.html">CV</a>
+      <a href="contact.html">Contact</a>
     </div>
   </nav>
 </header>
 
-<div class="page">
+<!-- PAGE CONTENT -->
+<section class="hero" style="padding: 80px 20px;">
+  <div class="hero-container" style="grid-template-columns: 1fr; text-align: center;">
+    <div class="hero-text">
+      <h1>Services</h1>
+      <p class="hero-subtitle">
+        I help real estate professionals, small businesses, and founders
+        build CRM systems that are simple, reliable, and actually used daily.
+      </p>
+    </div>
+  </div>
+</section>
 
- <h1>Services & Pricing</h1>
-<p>
-I help real estate professionals, small businesses, and founders set up CRMs that are easy to use, easy to maintain, and actually get used daily.
-</p>
+<section class="page" style="max-width:1200px; margin:0 auto; padding:60px 20px;">
 
-<h2>CRM Setup & Automation</h2>
+  <!-- CRM SERVICES -->
+  <h2 style="margin-bottom:24px;">CRM Setup & Automation</h2>
 
-<div class="cards">
-  <div class="card">
-    <h3>CRM Setup</h3>
-    <p>Initial CRM setup tailored to your business workflow.</p>
-    <ul>
-      <li>Buyer & seller pipelines</li>
-      <li>Lead stages & tags</li>
-      <li>Basic automation</li>
-    </ul>
-    <p class="price">Custom scope & pricing</p>
+  <div class="cards">
+    <div class="card">
+      <h3>CRM Setup</h3>
+      <p>Initial CRM setup tailored to your business workflow.</p>
+      <ul>
+        <li>Buyer & seller pipelines</li>
+        <li>Lead stages & tags</li>
+        <li>Basic automation</li>
+      </ul>
+      <p class="price">Custom scope & pricing</p>
+    </div>
+
+    <div class="card">
+      <h3>Automation & Campaigns</h3>
+      <p>Automated follow-ups that reduce manual work.</p>
+      <ul>
+        <li>Email & SMS workflows</li>
+        <li>Lead routing</li>
+        <li>Long-term nurturing</li>
+      </ul>
+      <p class="price">Custom scope & pricing</p>
+    </div>
+
+    <div class="card">
+      <h3>CRM Cleanup & Optimization</h3>
+      <p>Fix broken setups and improve performance.</p>
+      <ul>
+        <li>Pipeline cleanup</li>
+        <li>Contact organization</li>
+        <li>Workflow fixes</li>
+      </ul>
+      <p class="price">Custom scope & pricing</p>
+    </div>
   </div>
 
-  <div class="card">
-    <h3>Automation & Campaigns</h3>
-    <p>Automated follow-ups that reduce manual work.</p>
-    <ul>
-      <li>Email & SMS workflows</li>
-      <li>Lead routing</li>
-      <li>Long-term nurturing</li>
-    </ul>
-    <p class="price">Custom scope & pricing</p>
+  <!-- IT SUPPORT -->
+  <h2 style="margin:60px 0 24px;">IT Support & Integrations</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>System Troubleshooting</h3>
+      <p>Resolve technical issues across tools and platforms.</p>
+      <ul>
+        <li>Email delivery issues</li>
+        <li>Domain & DNS setup</li>
+        <li>CRM errors</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Integrations</h3>
+      <p>Connect tools so data flows smoothly.</p>
+      <ul>
+        <li>Zapier integrations</li>
+        <li>Website → CRM</li>
+        <li>Calendars & forms</li>
+      </ul>
+    </div>
   </div>
 
-  <div class="card">
-    <h3>CRM Cleanup & Optimization</h3>
-    <p>Fix broken setups and improve performance.</p>
-    <ul>
-      <li>Pipeline cleanup</li>
-      <li>Contact organization</li>
-      <li>Workflow fixes</li>
-    </ul>
-    <p class="price">Custom scope & pricing</p>
-  </div>
-</div>
+  <p style="margin-top:48px; max-width:800px;">
+    Each project is scoped individually based on business needs, system complexity,
+    and level of automation required. Ongoing support can be structured as
+    fixed monthly support or task-based assistance.
+  </p>
 
-<h2>IT Support & Integrations</h2>
+</section>
 
-<div class="cards">
-  <div class="card">
-    <h3>System Troubleshooting</h3>
-    <p>Resolve technical issues across tools and platforms.</p>
-    <ul>
-      <li>Email delivery issues</li>
-      <li>Domain & DNS setup</li>
-      <li>CRM errors</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h3>Integrations</h3>
-    <p>Connect tools so data flows smoothly.</p>
-    <ul>
-      <li>Zapier integrations</li>
-      <li>Website → CRM</li>
-      <li>Calendar & forms</li>
-    </ul>
-  </div>
-</div>
-
-<p>
-Each project is scoped individually based on business needs, system complexity, and level of automation required. 
-Ongoing support and maintenance can be structured as fixed monthly support or task-based assistance.
-</p>
-
-</div>
-
-</body>
-
-<main>
-  <section>
-    <h1>Services & Pricing</h1>
-    <p>
-      Fixed-scope CRM setup projects with optional ongoing support.
-    </p>
-  </section>
-
-  <section>
-    <h2>CRM Setup & Automation</h2>
-    <p>
-      Lead pipelines, workflows, email & SMS campaigns, CRM cleanup, and optimization.
-    </p>
-  </section>
-
-  <section>
-    <h2>CRM Maintenance & Optimization</h2>
-    <p>
-      Ongoing system improvements, automation tuning, and issue resolution.
-    </p>
-  </section>
-
-  <section>
-    <h2>IT Support & Integrations</h2>
-    <p>
-      Zapier integrations, Google Workspace support, system troubleshooting,
-      and platform connections.
-    </p>
-  </section>
-</main>
-
-<footer>
+<!-- FOOTER -->
+<footer class="site-footer">
   © Smart Anwana — CRM & IT Support Portfolio
 </footer>
 
